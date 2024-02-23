@@ -10,5 +10,4 @@ import { CounterParentComponent } from "./counter/counter-parent/counter-parent.
     imports: [RouterOutlet, CounterParentComponent]
 })
 export class AppComponent {
-  title = 'counter-app';
 }

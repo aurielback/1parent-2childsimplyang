@@ -10,20 +10,4 @@ import { CounterButtonsComponent } from "../counter-buttons/counter-buttons.comp
 })
 export class CounterParentComponent {
 
-  counter: number = 0;
-
-  onIncrement() {
-    this.counter++;
-  }
-
-  onDecrement() {
-    this.counter--;
-  }
-
-  onReset() {
-    this.counter = 0;
-  }
-
-
-
 }

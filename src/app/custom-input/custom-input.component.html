@@ -1,0 +1,12 @@
+<div>
+    <div> {{ message }} </div>
+    <input type="text" [(ngModel)]="value" />
+    <button (click)="onAdd()"> Add to counter </button>
+</div>
+
+<div>
+    <input type="text" [(ngModel)]="message" />
+    <button (click)="changeMessageName()">
+        change message
+    </button>
+</div>

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { CounterState } from '../counter/state/counter.state';
-import { changeMessage, customIncrement, decrement } from '../counter/state/counter.actions';
-import { getMessage } from '../counter/state/counter.selectors';
+import { CounterState } from '../state/counter.state';
+import { changeMessage, customIncrement, decrement } from '../state/counter.actions';
+import { getMessage } from '../state/counter.selectors';
+import { AppState } from '../../store/app.state';
 
 @Component({
   selector: 'app-custom-input',
@@ -16,7 +17,7 @@ export class CustomInputComponent implements OnInit{
   message: string | undefined;
   value: number | undefined;
 
-  constructor(private store: Store<{ counter: CounterState }>) {
+  constructor(private store: Store<AppState>) {
   }
 
   ngOnInit(): void {
